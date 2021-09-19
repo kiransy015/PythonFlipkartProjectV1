@@ -1,4 +1,6 @@
 from selenium.webdriver import Chrome,Firefox,Ie
+from selenium.webdriver.chrome.options import Options
+import os
 import pytest
 
 def getbrowserinstance():
@@ -9,7 +11,13 @@ def getbrowserinstance():
     urlinfo = "test"
 
     if browserinfo.lower()=="chrome":
-        driver = Chrome(".\\BrowserServers\\chromedriver.exe")
+        options = Options()
+        options.binary_location = "C:/Users/DELL/AppData/Local/Google/Chrome/Application/chrome.exe"
+        chromedriverpath = os.path
+        print("./")
+
+        driver = Chrome(options=options,
+                                  executable_path=".\\Browser_Servers\\chromedriver.exe", )
     elif browserinfo.lower()=="firefox":
         driver = Firefox(
             executable_path='.\\Browser_Servers\\geckodriver.exe')
