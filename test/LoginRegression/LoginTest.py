@@ -18,7 +18,7 @@ class LoginTest(unittest.TestCase):
         self.login = LoginPage(self.driver)
         self.home = HomePage(self.driver)
         self.cart = CartPage(self.driver)
-        file = open(".\\test\\LoginRegression\\testdata\\testdata.json")
+        file = open("G:\\Kiran\\Python\\gitWorkspace\\Python-Frameworks\\PythonFlipkartProjectV1\\test\\LoginRegression\\testdata\\testdata.json")
         self.testdata = json.load(file)
 
     def testInvalidFlipkartlogin(self):

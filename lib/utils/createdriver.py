@@ -17,10 +17,10 @@ def getbrowserinstance():
         print("./")
 
         driver = Chrome(options=options,
-                                  executable_path=".\\Browser_Servers\\chromedriver.exe", )
+                                  executable_path="G:\\Kiran\\Python\\gitWorkspace\\Python-Frameworks\\PythonFlipkartProjectV1\\BrowserServers\\chromedriver.exe", )
     elif browserinfo.lower()=="firefox":
         driver = Firefox(
-            executable_path='.\\Browser_Servers\\geckodriver.exe')
+            executable_path='G:\\Kiran\\Python\\gitWorkspace\\Python-Frameworks\\PythonFlipkartProjectV1\\BrowserServers\\geckodriver.exe')
     else:
         print('Invalid browser info!!!')
         return None
