@@ -1,5 +1,6 @@
 import unittest
 
+from _pytest import python
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
@@ -17,7 +18,7 @@ class LoginTest(unittest.TestCase):
         self.login = LoginPage(self.driver)
         self.home = HomePage(self.driver)
         self.cart = CartPage(self.driver)
-        file = open("G:\\Kiran\\Python\gitWorkspace\\Python-Frameworks\\PythonFlipkartProjectV1\\test\\LoginRegression\\testdata\\testdata.json")
+        file = open(".\\test\\LoginRegression\\testdata\\testdata.json")
         self.testdata = json.load(file)
 
     def testInvalidFlipkartlogin(self):
