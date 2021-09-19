@@ -1,0 +1,25 @@
+{
+  "title": "Online Shopping Site",
+  "LoginErrMsg": "Please enter valid Email ID/Mobile number",
+  "Invalid": {
+    "username": "abc",
+    "password": "abc"
+  },
+  "Valid": {
+    "username": "8310678182",
+    "password": "Test@123"
+  },
+  "search": {
+    "item1": "Redmi note",
+    "item2": "Watches and Accessories",
+    "item3": "mobiles"
+  },
+  "subsearch": {
+    "subitem1": "Wallets",
+    "subitem2": "SAMSUNG Galaxy A52"
+  },
+  "css": {
+    "color": "rgba(255, 255, 255, 1)",
+    "fontfamily": "Arial, sans-serif"
+  }
+}
